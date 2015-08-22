@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+public class MenuScript : MonoBehaviour {
+
+	public int[] level;
+	
+	public void LoadLevel(int index)
+	{
+		Application.LoadLevel(level[index]);
+	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
+}
